@@ -1,0 +1,5 @@
+PROCEDURE foo(x, y)
+	PROCEDURE work(x) w := x * y;
+CALL work(5);
+
+CALL foo(1, 5).

@@ -1,0 +1,12 @@
+VAR w;
+PROCEDURE foo(x, y)
+	w := 6
+;
+
+PROCEDURE g(x, y)
+	w := 7
+;
+
+foo := g
+
+.

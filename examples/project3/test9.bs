@@ -1,0 +1,10 @@
+VAR g, w;
+
+PROCEDURE g()
+
+	VAR h;
+	h := 8
+;
+
+w := 6
+.

@@ -1,0 +1,9 @@
+VAR w, t, j;
+
+
+BEGIN
+WHILE w > t DO w := t;
+
+w := 0
+END
+.

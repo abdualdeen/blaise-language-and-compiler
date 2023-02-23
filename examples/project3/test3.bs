@@ -1,0 +1,8 @@
+VAR w;
+
+PROCEDURE checkparams(x)
+	w := x;
+
+BEGIN
+	CALL checkparams(1, 5);
+END.

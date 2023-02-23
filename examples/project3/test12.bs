@@ -1,0 +1,12 @@
+VAR w;
+PROCEDURE g()
+    PROCEDURE g()
+        w := 0
+    ;
+    BEGIN
+        w := 1;
+        CALL g()
+    END
+;
+w := 2
+.

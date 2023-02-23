@@ -1,0 +1,10 @@
+VAR w;
+
+PROCEDURE foo()
+    w := 9    
+;
+
+BEGIN
+	CALL foo();
+	CALL out(w)
+END.

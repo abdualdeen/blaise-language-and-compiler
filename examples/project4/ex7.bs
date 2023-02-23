@@ -1,0 +1,6 @@
+VAR w;
+
+PROCEDURE guy(x, z)
+	w := x * z;
+
+CALL guy(55, 60000).

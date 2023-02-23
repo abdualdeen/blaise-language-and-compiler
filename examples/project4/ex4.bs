@@ -1,0 +1,12 @@
+VAR w;
+
+PROCEDURE funny(k)
+    IF k = 0 THEN
+        w := k / k
+    ELSE
+        w := k - k;
+
+BEGIN
+	CALL funny(1);
+	CALL out(w)
+END.

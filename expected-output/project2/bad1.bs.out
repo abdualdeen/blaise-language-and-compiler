@@ -1,0 +1,25 @@
+Program
+    Block
+        Variables
+            VariableDeclaration
+        Procedures
+            ProcedureDeclaration
+                FormalParameters
+                    VariableDeclaration
+                    VariableDeclaration
+                Block
+                    Procedures
+                        ProcedureDeclaration
+                            FormalParameters
+                                VariableDeclaration
+                            Block
+                                Statement
+                                    AssignmentStatement
+                                        Expression
+                                            Term
+                                                Factor
+                                                Term
+                                                    Factor
+                    Statement
+                        CallStatement
+Error: unexpected token 'work'

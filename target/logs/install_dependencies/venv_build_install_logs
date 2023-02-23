@@ -1,0 +1,46 @@
+Collecting flake8
+  Downloading flake8-5.0.4-py2.py3-none-any.whl (61 kB)
+Collecting antlr4-python3-runtime
+  Downloading antlr4_python3_runtime-4.11.1-py3-none-any.whl (144 kB)
+Collecting pyflakes<2.6.0,>=2.5.0
+  Downloading pyflakes-2.5.0-py2.py3-none-any.whl (66 kB)
+Collecting mccabe<0.8.0,>=0.7.0
+  Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Collecting pycodestyle<2.10.0,>=2.9.0
+  Downloading pycodestyle-2.9.1-py2.py3-none-any.whl (41 kB)
+Installing collected packages: pyflakes, pycodestyle, mccabe, flake8, antlr4-python3-runtime
+Successfully installed antlr4-python3-runtime-4.11.1 flake8-5.0.4 mccabe-0.7.0 pycodestyle-2.9.1 pyflakes-2.5.0
+WARNING: You are using pip version 21.2.4; however, version 22.2.2 is available.
+You should consider upgrading via the '/home/abdu/git/group1/target/venv/build/cpython-3.10.6.final.0/bin/python -m pip install --upgrade pip' command.
+Collecting antlr4-python3-runtime==4.10
+  Downloading antlr4-python3-runtime-4.10.tar.gz (116 kB)
+Building wheels for collected packages: antlr4-python3-runtime
+  Building wheel for antlr4-python3-runtime (setup.py): started
+  Building wheel for antlr4-python3-runtime (setup.py): finished with status 'done'
+  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.10-py3-none-any.whl size=144171 sha256=4bd3311d2195f8195afa83fe118fa72e3c00575b20e617c9de84cba0cdc97d14
+  Stored in directory: /home/abdu/.cache/pip/wheels/a0/60/fc/9df57f7df5f7a10536ebe7ae70d636c2d9d1f8a30b1300dca3
+Successfully built antlr4-python3-runtime
+Installing collected packages: antlr4-python3-runtime
+  Attempting uninstall: antlr4-python3-runtime
+    Found existing installation: antlr4-python3-runtime 4.11.1
+    Uninstalling antlr4-python3-runtime-4.11.1:
+      Successfully uninstalled antlr4-python3-runtime-4.11.1
+Successfully installed antlr4-python3-runtime-4.10
+WARNING: You are using pip version 21.2.4; however, version 22.2.2 is available.
+You should consider upgrading via the '/home/abdu/git/group1/target/venv/build/cpython-3.10.6.final.0/bin/python -m pip install --upgrade pip' command.
+Collecting flake8
+  Using cached flake8-5.0.4-py2.py3-none-any.whl (61 kB)
+Collecting antlr4-python3-runtime==4.10
+  Using cached antlr4_python3_runtime-4.10-py3-none-any.whl
+Collecting debugpy
+  Downloading debugpy-1.6.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.8 MB)
+Collecting pyflakes<2.6.0,>=2.5.0
+  Using cached pyflakes-2.5.0-py2.py3-none-any.whl (66 kB)
+Collecting mccabe<0.8.0,>=0.7.0
+  Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Collecting pycodestyle<2.10.0,>=2.9.0
+  Using cached pycodestyle-2.9.1-py2.py3-none-any.whl (41 kB)
+Installing collected packages: pyflakes, pycodestyle, mccabe, flake8, debugpy, antlr4-python3-runtime
+Successfully installed antlr4-python3-runtime-4.10 debugpy-1.6.3 flake8-5.0.4 mccabe-0.7.0 pycodestyle-2.9.1 pyflakes-2.5.0
+WARNING: You are using pip version 21.2.4; however, version 22.3.1 is available.
+You should consider upgrading via the '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0/bin/python -m pip install --upgrade pip' command.

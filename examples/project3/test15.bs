@@ -1,0 +1,2 @@
+VAR w;
+WHILE 4 < 6 DO w := 5.

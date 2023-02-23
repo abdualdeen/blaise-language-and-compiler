@@ -1,0 +1,8 @@
+VAR w;
+
+PROCEDURE guy(x, z)
+    PROCEDURE inside(z)
+	    w := z;
+CALL inside(99999);
+
+CALL guy(55, 60000).

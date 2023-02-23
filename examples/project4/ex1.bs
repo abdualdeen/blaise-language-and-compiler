@@ -1,0 +1,14 @@
+VAR w;
+
+PROCEDURE foo(x, y)
+    PROCEDURE work(x)
+        IF y <> 0 THEN
+            w := x / y
+        ELSE
+            w := x * x;
+CALL work(6);
+
+BEGIN
+	CALL foo(9, 2);
+	CALL out(w)
+END.

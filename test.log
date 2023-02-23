@@ -1,0 +1,887 @@
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 12:54:37
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public guy_x I
+.field static public guy_z I
+.field static public guy_inside_z I
+
+.method static public guy_inside : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_inside_z I
+   getstatic Blaise guy_inside_z I
+   putstatic Blaise w I
+   return
+.end code
+.end method
+
+.method static public guy : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_x I
+   iload_1
+   putstatic Blaise guy_z I
+   ldc 99999
+   invokestatic Blaise guy_inside (I)V
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 55
+   ldc 60000
+   invokestatic Blaise guy (II)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1694 ms] compile_sources [0 ms] antlr [841 ms] project4 [19 ms]
+Build finished at 2022-12-06 12:54:40
+Build took 2 seconds (2924 ms)
+*** /home/abdu/git/group1/expected-output/project4/ex8.bs.out	2022-12-06 12:54:29.981874553 -0600
+--- -	2022-12-06 12:54:40.698026387 -0600
+***************
+*** 13,18 ****
+--- 13,29 ----
+  .field static public w I
+  .field static public guy_x I
+  .field static public guy_z I
++ .field static public guy_inside_z I
++ 
++ .method static public guy_inside : (I)V
++ .code stack 32 locals 32
++    iload_0
++    putstatic Blaise guy_inside_z I
++    getstatic Blaise guy_inside_z I
++    putstatic Blaise w I
++    return
++ .end code
++ .end method
+  
+  .method static public guy : (II)V
+  .code stack 32 locals 32
+***************
+*** 20,29 ****
+     putstatic Blaise guy_x I
+     iload_1
+     putstatic Blaise guy_z I
+!    getstatic Blaise guy_x I
+!    getstatic Blaise guy_z I
+!    imul
+!    putstatic Blaise w I
+     return
+  .end code
+  .end method
+--- 31,38 ----
+     putstatic Blaise guy_x I
+     iload_1
+     putstatic Blaise guy_z I
+!    ldc 99999
+!    invokestatic Blaise guy_inside (I)V
+     return
+  .end code
+  .end method
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:00:22
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public guy_x I
+.field static public guy_z I
+.field static public guy_inside_z I
+
+.method static public guy_inside : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_inside_z I
+   getstatic Blaise guy_inside_z I
+   putstatic Blaise w I
+   return
+.end code
+.end method
+
+.method static public guy : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_x I
+   iload_1
+   putstatic Blaise guy_z I
+   ldc 99999
+   invokestatic Blaise guy_inside (I)V
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 55
+   ldc 60000
+   invokestatic Blaise guy (II)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1702 ms] compile_sources [0 ms] antlr [844 ms] project4 [49 ms]
+Build finished at 2022-12-06 13:00:24
+Build took 2 seconds (2958 ms)
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:01:08
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public foo_x I
+.field static public foo_y I
+.field static public foo_work_x I
+
+.method static public foo_work : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_work_x I
+   getstatic Blaise foo_y I
+   ldc 0
+   if_icmpeq L0
+   getstatic Blaise foo_work_x I
+   getstatic Blaise foo_y I
+   idiv
+   putstatic Blaise w I
+   goto L1
+.stack same
+L0:
+   getstatic Blaise foo_work_x I
+   getstatic Blaise foo_work_x I
+   imul
+   putstatic Blaise w I
+.stack same
+L1:
+   return
+.end code
+.end method
+
+.method static public foo : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_x I
+   iload_1
+   putstatic Blaise foo_y I
+   ldc 6
+   invokestatic Blaise foo_work (I)V
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 9
+   ldc 2
+   invokestatic Blaise foo (II)V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1555 ms] compile_sources [0 ms] antlr [790 ms] project4 [44 ms]
+Build finished at 2022-12-06 13:01:11
+Build took 2 seconds (2760 ms)
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:01:11
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public foo_x I
+.field static public foo_y I
+.field static public foo_z I
+.field static public foo_o I
+.field static public foo_work_y I
+.field static public foo_work_z I
+.field static public foo_work_o I
+.field static public foo_work_work2_z I
+.field static public foo_work_work2_o I
+
+.method static public foo_work_work2 : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_work_work2_z I
+   iload_1
+   putstatic Blaise foo_work_work2_o I
+   getstatic Blaise foo_work_y I
+   ldc 0
+   if_icmple L0
+   getstatic Blaise foo_work_work2_z I
+   getstatic Blaise foo_work_work2_o I
+   iadd
+   putstatic Blaise w I
+   goto L1
+.stack same
+L0:
+   getstatic Blaise foo_work_work2_z I
+   getstatic Blaise foo_work_work2_o I
+   isub
+   putstatic Blaise w I
+.stack same
+L1:
+   return
+.end code
+.end method
+
+.method static public foo_work : (III)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_work_y I
+   iload_1
+   putstatic Blaise foo_work_z I
+   iload_2
+   putstatic Blaise foo_work_o I
+   ldc 7
+   ldc 8
+   invokestatic Blaise foo_work_work2 (II)V
+   return
+.end code
+.end method
+
+.method static public foo : (IIII)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_x I
+   iload_1
+   putstatic Blaise foo_y I
+   iload_2
+   putstatic Blaise foo_z I
+   iload_3
+   putstatic Blaise foo_o I
+   ldc 6
+   ldc 7
+   ldc 8
+   invokestatic Blaise foo_work (III)V
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 9
+   ldc 2
+   ldc 4
+   ldc 6
+   invokestatic Blaise foo (IIII)V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1595 ms] compile_sources [0 ms] antlr [764 ms] project4 [47 ms]
+Build finished at 2022-12-06 13:01:14
+Build took 2 seconds (2792 ms)
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:01:15
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public funny_k I
+
+.method static public funny : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   ldc 0
+   if_icmpge L0
+   getstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   imul
+   putstatic Blaise w I
+   goto L1
+.stack same
+L0:
+   getstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   iadd
+   putstatic Blaise w I
+.stack same
+L1:
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 1
+   invokestatic Blaise funny (I)V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1515 ms] compile_sources [0 ms] antlr [686 ms] project4 [28 ms]
+Build finished at 2022-12-06 13:01:17
+Build took 2 seconds (2620 ms)
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:01:17
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public funny_k I
+
+.method static public funny : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   ldc 0
+   if_icmpne L0
+   getstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   idiv
+   putstatic Blaise w I
+   goto L1
+.stack same
+L0:
+   getstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   isub
+   putstatic Blaise w I
+.stack same
+L1:
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 1
+   invokestatic Blaise funny (I)V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1572 ms] compile_sources [0 ms] antlr [717 ms] project4 [33 ms]
+Build finished at 2022-12-06 13:01:20
+Build took 2 seconds (2724 ms)
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:01:21
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public funny_k I
+
+.method static public funny : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   ldc 0
+   if_icmpgt L0
+   getstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   idiv
+   putstatic Blaise w I
+   goto L1
+.stack same
+L0:
+   getstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   isub
+   putstatic Blaise w I
+.stack same
+L1:
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 1
+   invokestatic Blaise funny (I)V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1617 ms] compile_sources [0 ms] antlr [708 ms] project4 [24 ms]
+Build finished at 2022-12-06 13:01:23
+Build took 2 seconds (2744 ms)
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:01:24
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public funny_k I
+
+.method static public funny : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   ldc 0
+   if_icmplt L0
+   getstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   idiv
+   putstatic Blaise w I
+   goto L1
+.stack same
+L0:
+   getstatic Blaise funny_k I
+   getstatic Blaise funny_k I
+   isub
+   putstatic Blaise w I
+.stack same
+L1:
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 1
+   invokestatic Blaise funny (I)V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1457 ms] compile_sources [0 ms] antlr [758 ms] project4 [45 ms]
+Build finished at 2022-12-06 13:01:26
+Build took 2 seconds (2658 ms)
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:01:26
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public guy_x I
+.field static public guy_z I
+
+.method static public guy : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_x I
+   iload_1
+   putstatic Blaise guy_z I
+   getstatic Blaise guy_x I
+   getstatic Blaise guy_z I
+   imul
+   putstatic Blaise w I
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 55
+   ldc 60000
+   invokestatic Blaise guy (II)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1553 ms] compile_sources [0 ms] antlr [677 ms] project4 [37 ms]
+Build finished at 2022-12-06 13:01:29
+Build took 2 seconds (2654 ms)
+/usr/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+PyBuilder version 0.13.3
+Build started at 2022-12-06 13:01:29
+------------------------------------------------------------
+[INFO]  Building 425project version 4
+[INFO]  Executing build in /home/abdu/git/group1
+[INFO]  Going to execute task project4
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/abdu/git/group1/target/venv/build/cpython-3.10.8.final.0'
+[INFO]  Creating target 'test' VEnv in '/home/abdu/git/group1/target/venv/test/cpython-3.10.8.final.0'
+------------------------------------------------------------
+COMPILER OUTPUT START
+------------------------------------------------------------
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public guy_x I
+.field static public guy_z I
+.field static public guy_inside_z I
+
+.method static public guy_inside : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_inside_z I
+   getstatic Blaise guy_inside_z I
+   putstatic Blaise w I
+   return
+.end code
+.end method
+
+.method static public guy : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_x I
+   iload_1
+   putstatic Blaise guy_z I
+   ldc 99999
+   invokestatic Blaise guy_inside (I)V
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 55
+   ldc 60000
+   invokestatic Blaise guy (II)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class
+------------------------------------------------------------
+COMPILER OUTPUT END
+------------------------------------------------------------
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: 425project
+             Version: 4
+      Base directory: /home/abdu/git/group1
+        Environments: 
+               Tasks: prepare [1566 ms] compile_sources [0 ms] antlr [756 ms] project4 [23 ms]
+Build finished at 2022-12-06 13:01:32
+Build took 2 seconds (2774 ms)

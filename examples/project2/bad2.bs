@@ -1,0 +1,9 @@
+VAR w;
+
+PROCEDURE foo(x, y)
+	PROCEDURE work(x) w := x * y;
+CALL work(5);
+
+BEGIN
+	CALL foo(1 x, 5);
+END.

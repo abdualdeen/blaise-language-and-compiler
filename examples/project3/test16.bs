@@ -1,0 +1,13 @@
+VAR w, u, J;
+
+PROCEDURE get ()
+	PROCEDURE w(w, u, J)
+		u := J + 1
+
+	;
+	BEGIN
+		J := 9;
+		CALL get()
+	END
+;
+w := 5.

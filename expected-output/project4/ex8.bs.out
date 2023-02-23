@@ -1,0 +1,50 @@
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public guy_x I
+.field static public guy_z I
+.field static public guy_inside_z I
+
+.method static public guy_inside : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_inside_z I
+   getstatic Blaise guy_inside_z I
+   putstatic Blaise w I
+   return
+.end code
+.end method
+
+.method static public guy : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise guy_x I
+   iload_1
+   putstatic Blaise guy_z I
+   ldc 99999
+   invokestatic Blaise guy_inside (I)V
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 55
+   ldc 60000
+   invokestatic Blaise guy (II)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class

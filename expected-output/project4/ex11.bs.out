@@ -1,0 +1,34 @@
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+
+.method static public foo : ()V
+.code stack 32 locals 32
+   ldc 9
+   putstatic Blaise w I
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   invokestatic Blaise foo ()V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class

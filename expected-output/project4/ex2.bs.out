@@ -1,0 +1,98 @@
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public foo_x I
+.field static public foo_y I
+.field static public foo_z I
+.field static public foo_o I
+.field static public foo_work_y I
+.field static public foo_work_z I
+.field static public foo_work_o I
+.field static public foo_work_work2_z I
+.field static public foo_work_work2_o I
+
+.method static public foo_work_work2 : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_work_work2_z I
+   iload_1
+   putstatic Blaise foo_work_work2_o I
+   getstatic Blaise foo_work_y I
+   ldc 0
+   if_icmple L0
+   getstatic Blaise foo_work_work2_z I
+   getstatic Blaise foo_work_work2_o I
+   iadd
+   putstatic Blaise w I
+   goto L1
+.stack same
+L0:
+   getstatic Blaise foo_work_work2_z I
+   getstatic Blaise foo_work_work2_o I
+   isub
+   putstatic Blaise w I
+.stack same
+L1:
+   return
+.end code
+.end method
+
+.method static public foo_work : (III)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_work_y I
+   iload_1
+   putstatic Blaise foo_work_z I
+   iload_2
+   putstatic Blaise foo_work_o I
+   ldc 7
+   ldc 8
+   invokestatic Blaise foo_work_work2 (II)V
+   return
+.end code
+.end method
+
+.method static public foo : (IIII)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_x I
+   iload_1
+   putstatic Blaise foo_y I
+   iload_2
+   putstatic Blaise foo_z I
+   iload_3
+   putstatic Blaise foo_o I
+   ldc 6
+   ldc 7
+   ldc 8
+   invokestatic Blaise foo_work (III)V
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 9
+   ldc 2
+   ldc 4
+   ldc 6
+   invokestatic Blaise foo (IIII)V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class

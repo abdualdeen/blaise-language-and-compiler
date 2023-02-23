@@ -1,0 +1,1 @@
+VAR w; IF w/(4)+p<=k THEN w:=10 ELSE g:=p.

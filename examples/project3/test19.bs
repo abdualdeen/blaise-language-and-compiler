@@ -1,0 +1,13 @@
+VAR w;
+PROCEDURE foo(x)
+	w := 6
+;
+
+PROCEDURE g(x, y)
+	w := 7
+;
+BEGIN
+	foo := g;
+	CALL foo(1,1)
+END
+.

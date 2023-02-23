@@ -1,0 +1,16 @@
+VAR w;
+
+PROCEDURE foo(x, y, z, o)
+    PROCEDURE work(y, z, o)
+        PROCEDURE work2(z, o)
+            IF y > 0 THEN
+                w := z + o
+            ELSE
+                w := z - o;
+        CALL work2(7, 8);
+CALL work(6, 7, 8);
+
+BEGIN
+	CALL foo(9, 2, 4, 6);
+	CALL out(w)
+END.

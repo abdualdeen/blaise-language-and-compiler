@@ -1,0 +1,18 @@
+VAR w;
+
+PROCEDURE doNested(a, b)
+    VAR q;
+    IF a = 1 THEN q := 2 ELSE q := 3;
+
+PROCEDURE do1(x, y)
+    VAR a, b;
+    CALL doNested(a, b);
+
+PROCEDURE do2(c, d)
+    VAR u;
+    IF w = u THEN w := c * d ELSE w := c / d;
+    
+
+BEGIN
+    CALL check(1, 5);
+END.

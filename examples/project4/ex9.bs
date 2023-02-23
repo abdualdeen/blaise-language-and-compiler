@@ -1,0 +1,10 @@
+VAR w;
+
+PROCEDURE funny(k)
+    k := 0
+;
+BEGIN
+WHILE w = 1 DO w := w + 2;
+CALL out(w)
+END
+.

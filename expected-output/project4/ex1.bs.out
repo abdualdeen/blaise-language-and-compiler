@@ -1,0 +1,67 @@
+.version 59 0
+.class super Blaise
+.super java/lang/Object
+
+.method public <init> : ()V
+.code stack 1 locals 1
+   aload_0
+   invokespecial Method java/lang/Object <init> ()V
+   return
+.end code
+.end method
+
+.field static public w I
+.field static public foo_x I
+.field static public foo_y I
+.field static public foo_work_x I
+
+.method static public foo_work : (I)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_work_x I
+   getstatic Blaise foo_y I
+   ldc 0
+   if_icmpeq L0
+   getstatic Blaise foo_work_x I
+   getstatic Blaise foo_y I
+   idiv
+   putstatic Blaise w I
+   goto L1
+.stack same
+L0:
+   getstatic Blaise foo_work_x I
+   getstatic Blaise foo_work_x I
+   imul
+   putstatic Blaise w I
+.stack same
+L1:
+   return
+.end code
+.end method
+
+.method static public foo : (II)V
+.code stack 32 locals 32
+   iload_0
+   putstatic Blaise foo_x I
+   iload_1
+   putstatic Blaise foo_y I
+   ldc 6
+   invokestatic Blaise foo_work (I)V
+   return
+.end code
+.end method
+
+.method static public main : ([Ljava/lang/String;)V
+.code stack 32 locals 32
+   ldc 9
+   ldc 2
+   invokestatic Blaise foo (II)V
+   getstatic java/lang/System out Ljava/io/PrintStream;
+   getstatic Blaise w I
+   invokevirtual java/io/PrintStream println (I)V
+   return
+.end code
+.end method
+
+.sourcefile 'Blaise.java'
+.end class

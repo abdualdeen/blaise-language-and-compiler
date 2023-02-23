@@ -1,0 +1,15 @@
+Program
+    Block
+        Statement
+            CompoundStatement
+                Statement
+                    AssignmentStatement
+                        Expression
+                            Term
+                                Factor
+                Statement
+                    AssignmentStatement
+                        Expression
+                            Term
+                                Factor
+Error: unexpected token ';'

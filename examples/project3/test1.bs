@@ -1,0 +1,8 @@
+VAR w;
+
+PROCEDURE multiplybig(x, y)
+	WHILE w < 10 DO w := x * y;
+
+BEGIN
+	CALL multiplybig(1, 5);
+END.

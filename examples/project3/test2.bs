@@ -1,0 +1,9 @@
+VAR w;
+
+PROCEDURE check(x, y)
+    VAR u;
+	IF w = u THEN w := x * y ELSE w := x * y;
+
+BEGIN
+	CALL check(1, 5);
+END.

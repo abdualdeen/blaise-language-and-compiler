@@ -1,0 +1,21 @@
+Program
+    Block
+        Statement
+            WhileStatement
+                Condition
+                    Expression
+                        Term
+                            Factor
+                            Term
+                                Factor
+                        Expression
+                            Term
+                                Factor
+                    Expression
+                        Term
+                            Factor
+                Statement
+                    AssignmentStatement
+                        Expression
+                            Term
+                                Factor

@@ -1,0 +1,4 @@
+VAR h;
+
+IF h < k THEN h := 9 ELSE h := 10
+.
